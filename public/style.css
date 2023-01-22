@@ -18,6 +18,14 @@ a{
     text-decoration: none;
     color: #666;
 }
+.delete{
+    color: crimson;
+    text-decoration: underline;
+}
+.edit{
+    color: blueviolet;
+    text-decoration: underline;
+}
 
 /* Header */
 header{
@@ -44,8 +52,22 @@ header nav ul li a{
 .all-users{
     margin: 20px 0;
 }
+table{
+    border-collapse: collapse;
+    width: 700px;
+}
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+}
+tbody tr:nth-child(odd) {
+  background-color: rgba(22, 120, 162, 0.185);
+}
 
-
+tbody tr:nth-child(even) {
+  background-color: rgba(228, 149, 228, 0.242);
+}
 /* Student Form */
 form{
     width: 100%;

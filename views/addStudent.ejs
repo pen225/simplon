@@ -9,33 +9,41 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1><a href="/">Simplon Students</a></h1>
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/add">Add user</a></li>
-          </ul>
-        </nav>
-      </header>
+      <%- include("../partial/header.ejs") %>
 
       <form action="/add" method="POST">
         <h3>Ajouter un etudiant</h3>
         <div>
           <label for="nom">Nom</label>
-          <input type="text" id="nom" placeholder="Entrez votre nom" name="nom" />
+          <input
+            type="text"
+            id="nom"
+            placeholder="Entrez votre nom"
+            name="nom" />
         </div>
         <div>
           <label for="prenom">Prenom</label>
-          <input type="text" id="prenom" placeholder="Entrez votre prenom" name="prenom" />
+          <input
+            type="text"
+            id="prenom"
+            placeholder="Entrez votre prenom"
+            name="prenom" />
         </div>
         <div>
           <label for="tel">Telephone</label>
-          <input type="tel" id="tel" placeholder="Entrez votre Tel" name="tel" />
+          <input
+            type="tel"
+            id="tel"
+            placeholder="Entrez votre Tel"
+            name="tel" />
         </div>
         <div>
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Entrez votre email" name="email" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Entrez votre email"
+            name="email" />
         </div>
         <input type="submit" value="Add Student" />
       </form>
