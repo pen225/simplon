@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+/* Header */
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 a{
+    font-size: 2.5rem;
+    color: #1678a2;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li:first-child{
+    margin-right: 20px;
+}
+header nav ul li a{
+    font-size: 1.3rem;
+}
+
+/* All users */
+.all-users{
+    margin: 20px 0;
+}
+
+
+/* Student Form */
+form{
+    width: 100%;
+    margin-top: 60px;
+}
+form h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form input{
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 3px;
+    font-size: 17px;
+    border-radius: 3px;
+    border-style: none;
+    background: #1678a220;
+    outline: none;
+}
+form input[type="submit"]{
+    width: 100%;
+    background: #1678a2;
+    color: #fff;
+    cursor: pointer;
+    border-style: none;
+}
